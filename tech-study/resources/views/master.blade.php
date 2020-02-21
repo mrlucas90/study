@@ -10,19 +10,15 @@
         <link href="{{ asset('vendor/fontawesome/css/all.min.css') }}" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Nosifer&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 
         <!-- Theme Styles -->
         <link href="{{ asset('css/freelancer.min.css') }}" rel="stylesheet">
 
-        <!-- JavaScripts -->
-        <script src="{{ asset('vendor/jquery/jquery.min.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('js/jqBootstrapValidation.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('js/contact_me.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('js/freelancer.min.js') }}" type="text/javascript"></script>
     </head>
-    <body>
+    <body id="page-top">
         @yield('content')
+        @stack('js')
     </body>
 </html>
